@@ -71,7 +71,7 @@ Submit the followings to KLMS:
 You can also implement the entire pipeline yourself if you want.
 
 ### Grading
-_You'll get a zero score if you implement yourself but don't submit your code._ Otherwise,
+_You'll get a zero score if you don't submit your code._ Otherwise,
 
 - 100% score:
   - If you submit on time, and
