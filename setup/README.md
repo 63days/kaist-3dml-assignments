@@ -23,8 +23,8 @@ Open a terminal in the Kcloud VM.
 
 Run:
 ```
-git clone https://github.com/63days/kaist-3dml-assignment assginments
-cd assignment/setup
+git clone https://github.com/63days/kaist-3dml-assignments assginments
+cd assignments/setup
 ./install_cuda.sh
 ```
 You will get logged out with reboot. Wait for a minitue and re-connect to the Kcloud.
@@ -61,11 +61,11 @@ Build cuda_11.1.TC455_06.29069683_0
 ```
 
 ## 2. Install libraries.
-Move to `assignment/setup` again, and install some libraries.
+Move to `assignments/setup` again, and install some libraries.
 
 It would take some time. (about 5~10m)
 ```
-cd assignment/setup
+cd assignments/setup
 ./install_essential.sh
 ```
 Check whether you see the following output:
@@ -103,7 +103,7 @@ ssh -N -f -L {PORT_NUM}:localhost:{PORT_NUM} root@{VM_NAT_IP}
 Open a web browser, and go to the link you copied. You should be able to see a screen like this:
 ![jupyter_lab](./docs/jupyter_lab.png)
 
-Now all setup for the assignment has finished. 
+Now all setup for the assignments has finished. 
 
 Move to `pointnet` directory and follow the `REAMD.md` there.
 
