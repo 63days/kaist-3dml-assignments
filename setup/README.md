@@ -23,7 +23,7 @@ Open a terminal in the Kcloud VM.
 
 Run:
 ```
-git clone https://github.com/63days/kaist-3dml-assignments assginments
+git clone https://github.com/63days/kaist-3dml-assignments assignments
 cd assignments/setup
 ./install_cuda.sh
 ```
