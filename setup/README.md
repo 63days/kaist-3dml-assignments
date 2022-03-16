@@ -84,7 +84,7 @@ You should activate `venv` environement since all python libraries were installe
 Run:
 ```
 jupyter notebook --generate-config
-jupyter lab --port={PORT_NUM} --allow_root
+jupyter lab --port={PORT_NUM} --allow-root
 ```
 Use `4000+ (the last two digits of your VM ID)` as your `{PORT_NUM}`. If the last two digits of your VM ID is `01`, run:
 ```
