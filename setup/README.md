@@ -88,7 +88,7 @@ jupyter lab --port={PORT_NUM} --allow-root
 ```
 Use `4000+ (the last two digits of your VM ID)` as your `{PORT_NUM}`. If the last two digits of your VM ID is `01`, run:
 ```
-jupyter lab --port=4001 --allow_root
+jupyter lab --port=4001 --allow-root
 ```
 At the end of the output message, you'll see a webpage address starting like this:
 ```
