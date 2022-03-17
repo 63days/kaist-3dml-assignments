@@ -50,6 +50,9 @@ class STNKd(nn.Module):
 
 
 class PointNetFeat(nn.Module):
+    """
+    Corresponds to the part that extracts max-pooled features.
+    """
     def __init__(
         self,
         input_transform: bool = False,
@@ -59,6 +62,7 @@ class PointNetFeat(nn.Module):
         self.input_transform = input_transform
         self.feature_transform = feature_transform
 
+        # point-wise mlp
         self.conv1 = nn.Sequential(nn.Conv1d(3, 64, 1), nn.BatchNorm1d(64))
         self.conv2 = nn.Sequential(nn.Conv1d(64, 64, 1), nn.BatchNorm1d(64))
         self.conv3 = nn.Sequential(nn.Conv1d(64, 64, 1), nn.BatchNorm1d(64))
@@ -111,10 +115,10 @@ class PointNetCls(nn.Module):
         super().__init__()
         self.num_classes = num_classes
         
-        # extracts per-point features
+        # extracts max-pooled features
         self.pointnet_feat = PointNetFeat(input_transform, feature_transform)
         
-        # returns the final logits from a max-pooled feature.
+        # returns the final logits from the max-pooled features.
         self.fc = nn.Sequential(
             nn.Linear(1024, 512),
             nn.BatchNorm1d(512),
